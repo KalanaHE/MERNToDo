@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //connect to DB
-mongoose.connect('mongodb+srv://calculus:helloworld@todo-uwl1f.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://calculus:helloworld@cluster0-8qdmf.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 //create a schema (the blueprint)
 var todoSchema = new mongoose.Schema({
